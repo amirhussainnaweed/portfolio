@@ -115,7 +115,7 @@ const MyProjects = () => {
             <h3 className="font-Poppins font-normal text-[19px] text-blue-500 leading-[auto] tracking-[3%]">
               {item.part}
             </h3>
-            <p className="font-Poppins font-bold text-[24px] leading-[auto] tracking-[3%]">
+            <p className="sectionDark font-Poppins font-bold text-[24px] leading-[auto] tracking-[3%]">
               {item.about}
             </p>
           </motion.div>
