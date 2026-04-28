@@ -13,12 +13,12 @@ const Hero = () => {
           Amir Hussain
         </h2>
         <div>
-          <h1 className="font-Poppins font-bold text-[56px] sm:text-[70px] md:text-[75px] lg:text-[85px] xl:text-[90px] 2xl:text-[100px] leading-[120%] tracking-[3%]">
+          <h1 className="font-Poppins font-bold text-[46px] sm:text-[70px] md:text-[75px] lg:text-[85px] xl:text-[90px] 2xl:text-[100px] leading-[120%] tracking-[3%]">
             Web
           </h1>
           <div className="flex">
             <div className="w-[100px] px-2"></div>
-            <h1 className="font-Poppins font-bold text-[56px] sm:text-[70px] md:text-[75px] lg:text-[85px] xl:text-[90px] 2xl:text-[100px] leading-[120%] tracking-[3%]">
+            <h1 className="font-Poppins font-bold text-[46px] sm:text-[70px] md:text-[75px] lg:text-[85px] xl:text-[90px] 2xl:text-[100px] leading-[120%] tracking-[3%]">
               Developer
             </h1>
           </div>
