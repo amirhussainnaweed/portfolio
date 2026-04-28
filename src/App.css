@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Fredoka:wght@300..700&family=Gulzar&family=Noto+Naskh+Arabic:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "tailwindcss";
+
+body {
+  @apply bg-white text-black transition-colors duration-300;
+}
+
+.dark body {
+  @apply bg-black;
+}
+
+.dark .sectionDark {
+  @apply bg-black text-white;
+}
+
+.dark .imgicons {
+  @apply invert;
+}
+
+.dark .footerdark {
+  @apply bg-[#1a1a1a] text-white;
+}
+
+.dark .footerEnd {
+  @apply bg-[#111111];
+}
+
+@theme {
+  --font-Fredoka: "Fredoka", sans-serif;
+}
+@theme {
+  --font-Poppins: "Poppins", sans-serif;
+}
+
+@utility responsive {
+  @apply p-10 md:px-[100px] lg:px-[30px] xl:px-[70px] 2xl:px-[160px];
+}
+
+@utility btnRounded {
+  @apply cursor-pointer hover:bg-gray-100 shadow-gray-300 shadow-md rounded-[20px] px-4 py-2 w-[100%] flex items-center justify-center;
+}
+
+@utility navBtns {
+  @apply hover:text-blue-500 md:text-[16px] xl:text-[19px] 2xl:text-[21px] font-Poppins tracking-[3%] leading-[auto] hover:shadow-gray-300 hover:shadow-md hover:rounded-[5px] px-4 py-2;
+}
+
+@utility aboutMeslider {
+  @apply font-semibold text-[20px] leading-[auto] tracking-[3%] font-Poppins;
+}
+@utility headline {
+  @apply font-Poppins font-semibold text-[40px] leading-[auto] tracking-[3%] md:text-[45px] lg:text-[50px] xl:text-[55px] 2xl:text-[65px];
+}
+@utility buttonStyle {
+  @apply border-[0.4px] rounded-[12px] px-4 py-2 bg-[#F8F8F8] border-[#545454] font-Poppins font-normal md:text-[18px] lg:text-[19px] xl:text-[21px] 2xl:text-[24px] cursor-pointer;
+}
+@utility navBtnsfooter {
+  @apply md:text-[16px] xl:text-[19px] 2xl:text-[21px] font-Poppins tracking-[3%] leading-[auto];
+}
