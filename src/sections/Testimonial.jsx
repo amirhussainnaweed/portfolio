@@ -11,14 +11,14 @@ const cards = [
   {
     id: 2,
     name: "Tom",
-    role: "Manager",
+    role: "High School Student",
     src: "images/testi2.png",
     text: "You made difficult topics easy to understand and kept me motivated throughout. My confidence and results improved significantly.",
   },
   {
     id: 3,
     name: "Mike",
-    role: "Developer",
+    role: "Founder",
     src: "images/testi1.png",
     text: "You turned my ideas into a clean, professional design that fits my brand perfectly. The process was easy, and the results were impressive.",
   },
