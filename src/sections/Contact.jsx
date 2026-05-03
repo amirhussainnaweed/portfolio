@@ -28,11 +28,11 @@ export default function Contact() {
 
   return (
     <div className="responsive flex flex-col gap-9 items-center text-center mt-[40px]">
-      <h2 className="headline sectionDark">Let's Design Together</h2>
+      <h2 className="headline sectionDark">Ready to Get Started?</h2>
       <p className="sectionDark font-Poppins font-normal leading-[auto] tracking-[3%] md:text-[17px] lg:text-[18px] xl:text-[19px] 2xl:text-[21px] lg:w-[932px]">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nostrum
-        dignissimos nesciunt. Repellendus impedit error quaerat, adipisci iusto
-        minima laborum?
+        From building seamless web experiences to crafting strong visuals and
+        supporting academic growth, I focus on delivering real value. Let’s work
+        together and create something impactful.
       </p>
       <div className="flex flex-col lg:flex-row gap-6 w-full lg:justify-center mt-[60px]">
         <input
