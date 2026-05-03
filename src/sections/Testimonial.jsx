@@ -6,21 +6,21 @@ const cards = [
     name: "Joe",
     role: "Ceo",
     src: "images/testi1.png",
-    text: "lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam soluta quod, aperiam eveniet doloribus in impedit obcaecati facere! Exercitationem, rem.",
+    text: "You built a fast, clean, and highly functional website that exceeded our expectations. Communication was smooth, and everything was delivered on time.",
   },
   {
     id: 2,
     name: "Tom",
     role: "Manager",
     src: "images/testi2.png",
-    text: "lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam soluta quod, aperiam eveniet doloribus in impedit obcaecati facere! Exercitationem, rem.",
+    text: "You made difficult topics easy to understand and kept me motivated throughout. My confidence and results improved significantly.",
   },
   {
     id: 3,
     name: "Mike",
     role: "Developer",
     src: "images/testi1.png",
-    text: "lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam soluta quod, aperiam eveniet doloribus in impedit obcaecati facere! Exercitationem, rem.",
+    text: "You turned my ideas into a clean, professional design that fits my brand perfectly. The process was easy, and the results were impressive.",
   },
 ];
 
@@ -31,8 +31,7 @@ const Testimonial = () => {
     <div className="overflow-hidden responsive flex flex-col items-center gap-9 mt-[40px]">
       <h2 className="sectionDark headline text-center">Testimonials</h2>
       <p className="sectionDark text-center font-Poppins font-normal leading-[auto] tracking-[3%] md:text-[17px] lg:text-[18px] xl:text-[19px] 2xl:text-[21px] lg:w-[932px]">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod omnis
-        molestias quae eaque ullam quos quis alias ducimus repellat provident.
+        What my clients say about me:
       </p>
       <div className="w-full max-w-[900px]">
         <div
@@ -59,9 +58,7 @@ const Testimonial = () => {
                     “
                   </span>
                   {item.text}
-                  <span className="text-blue-500 text-4xl absolute right-2 bottom-0">
-                    ”
-                  </span>
+                  <span className="text-blue-500 text-4xl">”</span>
                 </p>
                 <h2 className="font-Poppins font-normal text-[24px] leading-[auto] tracking-[2%]">
                   {item.name}
