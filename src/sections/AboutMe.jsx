@@ -55,7 +55,7 @@ const AboutMe = () => {
       </div>
       <img
         className="md:max-w-[393px] xl:max-w-[538px] xl:max-h-[687px] mt-[70px] lg:mt-[0]"
-        src="images/Nportfoliome2.png"
+        src="images/Nme2.png"
         alt=""
       />
       <div className="hidden lg:flex lg:flex-col justify-center lg:w-[553px] xl:w-[653px] 2xl:w-[753px]">

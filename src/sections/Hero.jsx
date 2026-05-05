@@ -35,7 +35,7 @@ const Hero = () => {
       <div className="mt-[100px] lg:mt-[0] flex flex-col items-center">
         <img
           className="md:max-w-[393px] xl:max-w-[538px] xl:max-h-[687px]"
-          src="images/Nportfoliome.png"
+          src="images/Nme.png"
           alt=""
         />
         <div className="flex gap-4 mt-6">
@@ -50,19 +50,31 @@ const Hero = () => {
             href="https://www.linkedin.com/in/amir-hussain-naweed-80a798308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"
           >
-            <img className="cursor-pointer imgicons" src="images/linkedin.png" alt="" />
+            <img
+              className="cursor-pointer imgicons"
+              src="images/linkedin.png"
+              alt=""
+            />
           </a>
           <a
             href="https://www.facebook.com/amerhussain.naweedaadillzadah"
             target="_blank"
           >
-            <img className="cursor-pointer imgicons" src="images/facebook.png" alt="" />
+            <img
+              className="cursor-pointer imgicons"
+              src="images/facebook.png"
+              alt=""
+            />
           </a>
           <a
             href="https://www.instagram.com/amirhussainnaweed?igsh=YzljYTk1ODg3Zg=="
             target="_blank"
           >
-            <img className="cursor-pointer imgicons" src="images/instagram.png" alt="" />
+            <img
+              className="cursor-pointer imgicons"
+              src="images/instagram.png"
+              alt=""
+            />
           </a>
         </div>
       </div>
