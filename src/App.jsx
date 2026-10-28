@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Sections from "./sections/Sections";
+import Certificates from "./pages/Certificates";
 
 function getInitialTheme() {
   const saved = localStorage.getItem("theme");
@@ -43,15 +44,37 @@ function App() {
 
   return (
     <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Sections theme={theme} toggleTheme={toggleTheme} />} />
-      <Route path="/aboutme" element={<Sections theme={theme} toggleTheme={toggleTheme} />} />
-      <Route path="/services" element={<Sections theme={theme} toggleTheme={toggleTheme} />} />
-      <Route path="/myprojects" element={<Sections theme={theme} toggleTheme={toggleTheme} />} />
-      <Route path="/testimonials" element={<Sections theme={theme} toggleTheme={toggleTheme} />} />
-      <Route path="/contact" element={<Sections theme={theme} toggleTheme={toggleTheme} />} />
-    </Routes>
-  </BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={<Sections theme={theme} toggleTheme={toggleTheme} />}
+        />
+        <Route
+          path="/aboutme"
+          element={<Sections theme={theme} toggleTheme={toggleTheme} />}
+        />
+        <Route
+          path="/services"
+          element={<Sections theme={theme} toggleTheme={toggleTheme} />}
+        />
+        <Route
+          path="/myprojects"
+          element={<Sections theme={theme} toggleTheme={toggleTheme} />}
+        />
+        <Route
+          path="/testimonials"
+          element={<Sections theme={theme} toggleTheme={toggleTheme} />}
+        />
+        <Route
+          path="/contact"
+          element={<Sections theme={theme} toggleTheme={toggleTheme} />}
+        />
+        <Route
+          path="/certificates"
+          element={<Certificates theme={theme} toggleTheme={toggleTheme} />}
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

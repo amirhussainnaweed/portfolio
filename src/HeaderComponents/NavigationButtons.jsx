@@ -17,6 +17,9 @@ const NavigationButtons = () => {
       <Link className="navBtns" to="/myprojects">
         Projects
       </Link>
+      <Link className="navBtns" to="/certificates">
+        Certificates
+      </Link>
       <Link className="navBtns" to="/testimonials">
         Testimonials
       </Link>

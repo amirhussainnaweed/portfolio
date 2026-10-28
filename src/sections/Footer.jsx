@@ -21,6 +21,9 @@ const Footer = () => {
           <Link className="navBtnsfooter" to="/myprojects">
             Projects
           </Link>
+          <Link className="navBtnsfooter" to="/certificates">
+            Certificates
+          </Link>
           <Link className="navBtnsfooter" to="/testimonials">
             Testimonials
           </Link>

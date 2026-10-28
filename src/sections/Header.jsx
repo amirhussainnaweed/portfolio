@@ -95,6 +95,13 @@ const Header = ({ theme, toggleTheme }) => {
             </Link>
             <Link
               className="btnRounded"
+              to="/certificates"
+              onClick={() => setShow(false)}
+            >
+              Certificates
+            </Link>
+            <Link
+              className="btnRounded"
               to="/testimonials"
               onClick={() => setShow(false)}
             >

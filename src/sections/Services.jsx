@@ -7,7 +7,7 @@ const services = [
     src: "images/vector1.png",
     className: "w-[70px]",
     label: "Web Development",
-    desc: "Responsive and flexible web applications",
+    desc: "Responsive and flexible web applications for your digital presence",
   },
   {
     id: 2,
