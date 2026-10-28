@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Button from "../Components/Button";
+// import ProjectButton from "../Components/ProjectButton";
 import { motion } from "framer-motion";
+import ProjectButton from "../Components/ProjectButton";
 
 const All = [
   {
@@ -63,42 +65,18 @@ const MyProjects = () => {
     <div className="responsive mt-[40px] flex flex-col items-center gap-9">
       <h2 className="headline sectionDark">My Projects</h2>
 
-      <div className="flex gap-2 flex-wrap justify-center">
-        <Button
-          className={`buttonStyle ${
-            selected === "All" ? "bg-blue-500 text-white" : ""
-          }`}
-          label="All"
-          onClick={() => setSelected("All")}
-        />
-        <Button
-          className={`buttonStyle ${
-            selected === "Web Design" ? "bg-blue-500 text-white" : ""
-          }`}
-          label="Web Design"
-          onClick={() => setSelected("Web Design")}
-        />
-        <Button
-          className={`buttonStyle ${
-            selected === "Mentoring" ? "bg-blue-500 text-white" : ""
-          }`}
-          label="Mentoring"
-          onClick={() => setSelected("Mentoring")}
-        />
-        <Button
-          className={`buttonStyle ${
-            selected === "Graphic Design" ? "bg-blue-500 text-white" : ""
-          }`}
-          label="Graphic Design"
-          onClick={() => setSelected("Graphic Design")}
-        />
-        <Button
-          className={`buttonStyle ${
-            selected === "Drawing" ? "bg-blue-500 text-white" : ""
-          }`}
-          label="Drawing"
-          onClick={() => setSelected("Drawing")}
-        />
+      <div className="flex flex-wrap justify-center gap-3">
+        {["All", "Web Design", "Mentoring", "Graphic Design", "Drawing"].map(
+          (category) => (
+            <ProjectButton
+              key={category}
+              variant="filter"
+              label={category}
+              active={selected === category}
+              onClick={() => setSelected(category)}
+            />
+          ),
+        )}
       </div>
 
       <div className="flex flex-wrap gap-7 justify-center">
