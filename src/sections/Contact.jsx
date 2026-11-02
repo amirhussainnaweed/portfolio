@@ -15,7 +15,7 @@ export default function Contact() {
         "service_vw3vboq",
         "template_8pyhebj",
         templateParams,
-        "EPgq3vY3AK5VQgPBj"
+        "EPgq3vY3AK5VQgPBj",
       )
       .then(() => {
         alert("Email sent!");
@@ -28,15 +28,17 @@ export default function Contact() {
 
   return (
     <div className="responsive flex flex-col gap-9 items-center text-center mt-[40px]">
-      <h2 className="headline sectionDark">Ready to Get Started?</h2>
-      <p className="sectionDark font-Poppins font-normal leading-[auto] tracking-[3%] md:text-[17px] lg:text-[18px] xl:text-[19px] 2xl:text-[21px] lg:w-[932px]">
+      <h2 className="headline sectionDark text-3xl md:text-3xl lg:text-5xl">
+        Ready to Get Started?
+      </h2>
+      <p className="sectionDark font-Poppins font-normal leading-[auto] tracking-[3%] text-[14px] lg:text-[16px] xl:text-[18px] lg:w-[932px]">
         From building seamless web experiences to crafting strong visuals and
         supporting academic growth, I focus on delivering real value. Let’s work
         together and create something impactful.
       </p>
       <div className="flex flex-col lg:flex-row gap-6 w-full lg:justify-center mt-[60px]">
         <input
-          className="w-full lg:w-[627px] border-1 bg-[#F8F8F8] border-[#AFAFAF] rounded-[14px] px-5 py-3 w-[405px] h-[75px] font-Poppins font-normal leading-[auto] tracking-[3%] md:text-[17px] lg:text-[18px] xl:text-[19px] 2xl:text-[21px]"
+          className="w-full lg:w-[627px] border-1 bg-[#F8F8F8] border-[#AFAFAF] rounded-[14px] px-5 py-3 w-[405px] h-[65px] font-Poppins font-normal leading-[auto] tracking-[3%] md:text-[17px] lg:text-[18px] xl:text-[19px] 2xl:text-[21px]"
           type="email"
           placeholder="Enter your email"
           value={email}
@@ -44,7 +46,7 @@ export default function Contact() {
         />
 
         <Button
-          className=" buttonStyle h-[75px] lg:w-[222px] rounded-[14px] px-7 bg-blue-500 text-white"
+          className=" buttonStyle h-[65px] lg:w-[222px] rounded-[14px] px-7 bg-blue-500 text-white text-[18px] md:text-[19px] lg:text-[21px]"
           label="Contact Me"
           onClick={() => sendEmail()}
         />

@@ -2,33 +2,53 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Button from "../Components/Button";
 
+import {
+  FiHome,
+  FiUser,
+  FiBriefcase,
+  FiCode,
+  FiAward,
+  FiMessageCircle,
+  FiMail,
+  FiDownload,
+} from "react-icons/fi";
+
 const NavigationButtons = () => {
+  const navigationItems = [
+    { label: "Home", path: "/", icon: FiHome },
+    { label: "About Me", path: "/aboutme", icon: FiUser },
+    { label: "Services", path: "/services", icon: FiBriefcase },
+    { label: "Projects", path: "/myprojects", icon: FiCode },
+    { label: "Certificates", path: "/certificates", icon: FiAward },
+    // {
+    //   label: "Testimonials",
+    //   path: "/testimonials",
+    //   icon: FiMessageCircle,
+    // },
+    { label: "Contacts", path: "/contact", icon: FiMail },
+  ];
+
   return (
-    <div className="hidden lg:flex items-center xl:gap-1">
-      <Link className="navBtns" to="/">
-        Home
-      </Link>
-      <Link className="navBtns" to="/aboutme">
-        About Me
-      </Link>
-      <Link className="navBtns" to="/services">
-        Services
-      </Link>
-      <Link className="navBtns" to="/myprojects">
-        Projects
-      </Link>
-      <Link className="navBtns" to="/certificates">
-        Certificates
-      </Link>
-      <Link className="navBtns" to="/testimonials">
-        Testimonials
-      </Link>
-      <Link className="navBtns" to="/contact">
-        Contacts
-      </Link>
+    <div className="hidden lg:flex items-center gap-2">
+      {navigationItems.map((item) => {
+        const Icon = item.icon;
+
+        return (
+          <Link key={item.path} to={item.path} className="navBtns">
+            <Icon className="text-base" />
+            <span>{item.label}</span>
+          </Link>
+        );
+      })}
+
       <Button
-        className="hover:text-white md:text-[16px] lg:text-[17px] xl:text-[21px] bg-blue-400 hover:bg-blue-500 rounded-[5px] px-4 py-2 hover:shadow-gray-400 hover:shadow-md font-Poppins tracking-[3%] leading-[auto]"
-        label="Download CV"
+        className="navBtns downloadBtn"
+        label={
+          <>
+            <FiDownload className="text-base" />
+            <span>Download CV</span>
+          </>
+        }
         onClick={() => {
           const link = document.createElement("a");
           link.href = "/cv.pdf";

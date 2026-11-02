@@ -29,8 +29,10 @@ const Testimonial = () => {
 
   return (
     <div className="overflow-hidden responsive flex flex-col items-center gap-9 mt-[40px]">
-      <h2 className="sectionDark headline text-center">Testimonials</h2>
-      <p className="sectionDark text-center font-Poppins font-normal leading-[auto] tracking-[3%] md:text-[17px] lg:text-[18px] xl:text-[19px] 2xl:text-[21px] lg:w-[932px]">
+      <h2 className="sectionDark headline text-center text-3xl md:text-3xl lg:text-5xl">
+        Testimonials
+      </h2>
+      <p className="sectionDark text-center font-Poppins font-normal leading-[auto] tracking-[3%] text-[14px] lg:text-[16px] xl:text-[18px] lg:w-[932px]">
         What my clients say about me:
       </p>
       <div className="w-full max-w-[900px]">

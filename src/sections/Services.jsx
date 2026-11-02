@@ -36,8 +36,8 @@ const services = [
 const Services = () => {
   return (
     <div className="responsive flex flex-col items-center mt-[40px] gap-9">
-      <h2 className="headline sectionDark">Services</h2>
-      <p className="sectionDark font-Poppins font-normal leading-[auto] tracking-[3%] md:text-[17px] lg:text-[18px] xl:text-[19px] 2xl:text-[21px]">
+      <h2 className="headline sectionDark text-3xl md:text-3xl lg:text-5xl">Services</h2>
+      <p className="sectionDark font-Poppins font-normal leading-[auto] tracking-[3%] text-[14px] lg:text-[16px] xl:text-[18px]">
         Services I Provide to my clients:
       </p>
       <div className="flex flex-wrap mt-[10px] gap-8 justify-center">

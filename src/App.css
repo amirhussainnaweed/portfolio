@@ -58,3 +58,137 @@ body {
 @utility navBtnsfooter {
   @apply md:text-[16px] xl:text-[19px] 2xl:text-[21px] font-Poppins tracking-[3%] leading-[auto];
 }
+.technologyBadge {
+  @apply border-blue-200 bg-blue-50 text-blue-800;
+}
+
+.dark .technologyBadge {
+  @apply border-blue-900 bg-blue-950 text-blue-200;
+}
+
+.projectDescription {
+  @apply text-slate-600;
+}
+
+.dark .projectDescription {
+  @apply text-slate-300;
+}
+
+.themeToggle {
+  @apply hover:bg-gray-100;
+}
+
+.dark .themeToggle {
+  @apply hover:bg-gray-800;
+}
+
+/* Shared navbar */
+.navbarShell {
+  @apply border-b border-slate-200/70 bg-white/85 shadow-sm backdrop-blur-xl;
+}
+
+.dark .navbarShell {
+  @apply border-slate-700/60 bg-slate-950/75;
+}
+
+/* Desktop navigation links */
+.navBtns {
+  @apply rounded-xl px-3 py-2 text-sm font-medium text-slate-700 transition-all duration-200;
+}
+
+.navBtns:hover {
+  @apply bg-blue-50 text-blue-700;
+}
+
+.dark .navBtns {
+  @apply text-slate-200;
+}
+
+.dark .navBtns:hover {
+  @apply bg-slate-800 text-blue-300;
+}
+
+/* Theme toggle */
+.themeToggle {
+  @apply hover:bg-slate-100;
+}
+
+.dark .themeToggle {
+  @apply hover:bg-slate-800;
+}
+
+/* Mobile navigation links */
+.mobileNavLink {
+  @apply w-full rounded-2xl px-5 py-3 text-center text-sm font-medium text-slate-700 transition-all duration-200;
+}
+
+.mobileNavLink:hover {
+  @apply bg-blue-500 text-white;
+}
+
+.dark .mobileNavLink {
+  @apply text-slate-200;
+}
+
+.dark .mobileNavLink:hover {
+  @apply bg-blue-500 text-white;
+}
+
+.navBtns {
+  @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-2xl border border-blue-200 bg-blue-50 px-3 py-2 text-sm font-medium text-blue-700 transition-all duration-300;
+}
+
+.navBtns:hover {
+  @apply border-blue-300 bg-blue-100 text-blue-800 shadow-md shadow-blue-400/40;
+  transform: translateY(-1px);
+}
+
+.dark .navBtns {
+  @apply border-blue-900 bg-blue-950 text-blue-200;
+}
+
+.dark .navBtns:hover {
+  @apply border-blue-700 bg-blue-900 text-blue-100 shadow-md shadow-blue-500/30;
+}
+
+.downloadBtn {
+  @apply border-blue-300 bg-blue-100;
+}
+
+.dark .downloadBtn {
+  @apply border-blue-800 bg-blue-900;
+}
+
+/* Mobile navigation buttons */
+.mobileNavLink {
+  @apply flex w-full max-w-xs items-center justify-center gap-3 rounded-3xl border border-blue-200 bg-blue-50 px-4 py-3 text-sm font-medium text-blue-700 transition-all duration-300;
+}
+
+.mobileNavLink:hover {
+  @apply border-blue-300 bg-blue-100 text-blue-800 shadow-md shadow-blue-400/40;
+  transform: translateY(-1px);
+}
+
+.dark .mobileNavLink {
+  @apply border-blue-900 bg-blue-950 text-blue-200;
+}
+
+.dark .mobileNavLink:hover {
+  @apply border-blue-700 bg-blue-900 text-blue-100 shadow-md shadow-blue-500/30;
+}
+
+.mobileDownloadBtn {
+  @apply border-blue-300 bg-blue-100;
+}
+
+.dark .mobileDownloadBtn {
+  @apply border-blue-800 bg-blue-900;
+}
+
+.navbarLogo {
+  @apply text-slate-900 transition-colors duration-300;
+}
+
+.dark .navbarLogo {
+  @apply text-white;
+}

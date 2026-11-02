@@ -3,6 +3,7 @@ import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import Header from "../sections/Header";
 import Footer from "../sections/Footer";
 import Button from "../Components/Button";
+import ProjectButton from "../Components/ProjectButton";
 
 // Add your certificates here, one object per certificate.
 // Put the images in public/images/certificates/ and use paths like the ones below.
@@ -114,23 +115,25 @@ const Certificates = ({ theme, toggleTheme }) => {
 
   return (
     <div className="sectionDark min-h-screen">
-      <Header theme={theme} toggleTheme={toggleTheme} />
-
       <div className="responsive mt-[40px] flex flex-col items-center gap-9">
-        <h1 className="headline sectionDark">My Certificates</h1>
-        <p className="sectionDark font-Poppins font-normal leading-[auto] tracking-[3%] text-center md:text-[17px] lg:text-[18px] xl:text-[19px] 2xl:text-[21px]">
+        <h1 className="headline sectionDark text-3xl md:text-3xl lg:text-5xl">
+          My Certificates
+        </h1>
+        <p className="sectionDark text-[16px] font-Poppins font-normal leading-[auto] tracking-[3%] text-center text-[14px] lg:text-[16px] xl:text-[18px]">
           Courses and programs I have completed. Select a certificate to see it
           in full.
         </p>
 
         <div className="flex gap-2 flex-wrap justify-center">
           {categories.map((category) => (
-            <Button
+            <ProjectButton
               key={category}
               className={`buttonStyle ${
                 selected === category ? "bg-blue-500 text-white" : ""
               }`}
+              variant="filter"
               label={category}
+              active={selected === category}
               onClick={() => setSelected(category)}
             />
           ))}

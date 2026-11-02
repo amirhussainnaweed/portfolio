@@ -23,8 +23,7 @@ const Sections = ({ theme, toggleTheme }) => {
   return (
     <>
       <section id="home">
-        <Header theme={theme} toggleTheme={toggleTheme} />
-        <Hero theme={theme} toggleTheme={toggleTheme}/>
+        <Hero theme={theme} toggleTheme={toggleTheme} />
       </section>
       <section id="aboutme">
         <AboutMe theme={theme} toggleTheme={toggleTheme} />

@@ -12,10 +12,10 @@ const AboutMe = () => {
   return (
     <div className="mt-10 responsive flex flex-col lg:flex-row lg:justify-between items-center sectionDark">
       <div className="lg:hidden">
-        <h2 className="font-semibold leading-[auto] tracking-[3%] font-Poppins text-[40px]">
+        <h2 className="font-semibold leading-[auto] tracking-[3%] font-Poppins text-3xl md:text-3xl lg:text-5xl">
           About Me
         </h2>
-        <p className="font-normal font-Poppins md:text-[16px] lg:text-[18px] xl:text-[21px]">
+        <p className="font-normal font-Poppins text-[14px] lg:text-[16px] xl:text-[18px]">
           I am a passionate developer with experience in building web
           applications using React and other modern technologies.
         </p>
