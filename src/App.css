@@ -192,3 +192,75 @@ body {
 .dark .navbarLogo {
   @apply text-white;
 }
+
+/* Hero professional focus badge */
+.heroFocusBadge {
+  @apply border-blue-200 bg-blue-50 text-blue-700;
+}
+
+.dark .heroFocusBadge {
+  @apply border-blue-900 bg-blue-950 text-blue-300;
+}
+
+/* Hero introduction */
+.heroDescription {
+  @apply text-slate-700;
+}
+
+.dark .heroDescription {
+  @apply text-slate-300;
+}
+
+/* Hero technology items */
+.heroTechItem {
+  @apply border-slate-200 bg-slate-50 text-slate-700;
+}
+
+.dark .heroTechItem {
+  @apply border-slate-700 bg-slate-900 text-slate-200;
+}
+
+/* Technology heading */
+.heroTechLabel {
+  @apply text-slate-500;
+}
+
+.dark .heroTechLabel {
+  @apply text-slate-400;
+}
+
+/* Social icons — default colors */
+.socialIcon {
+  @apply text-slate-800 transition-all duration-300;
+}
+
+.dark .socialIcon {
+  @apply text-slate-200;
+}
+
+/* Hover animation */
+.socialIcon:hover {
+  transform: translateY(-4px) scale(1.12);
+}
+
+/* Individual brand colors */
+.social-github:hover {
+  color: #000000;
+}
+
+.social-linkedin:hover {
+  color: #0A66C2;
+}
+
+.social-facebook:hover {
+  color: #1877F2;
+}
+
+.social-instagram:hover {
+  color: #E4405F;
+}
+
+/* GitHub should remain visible in dark mode */
+.dark .social-github:hover {
+  color: #ffffff;
+}

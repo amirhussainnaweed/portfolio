@@ -48,7 +48,7 @@ function App() {
     <BrowserRouter>
       <Header theme={theme} toggleTheme={toggleTheme} />
 
-      <main className="pt-24">
+      <main className="pt-12">
         <Routes>
           <Route
             path="/"
