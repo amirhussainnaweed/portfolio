@@ -264,3 +264,122 @@ body {
 .dark .social-github:hover {
   color: #ffffff;
 }
+
+/* Portrait glow */
+.heroPortrait {
+  isolation: isolate;
+}
+
+.portraitGlow {
+  @apply absolute left-1/2 top-1/2 -z-10 h-[75%] w-[75%] rounded-full;
+
+  background: rgba(37, 99, 235, 0.32);
+
+  box-shadow:
+    0 0 45px 20px rgba(37, 99, 235, 0.18),
+    0 0 100px 45px rgba(37, 99, 235, 0.22),
+    0 0 160px 70px rgba(59, 130, 246, 0.12);
+
+  filter: blur(65px);
+  transform: translate(-50%, -50%);
+  animation: glowPulse 4s ease-in-out infinite;
+}
+
+/* Floating particles */
+.orbitParticle {
+  @apply absolute z-20 rounded-full;
+
+  background: #60a5fa;
+  box-shadow:
+    0 0 8px rgba(59, 130, 246, 0.9),
+    0 0 18px rgba(59, 130, 246, 0.6);
+}
+
+.particleOne {
+  width: 9px;
+  height: 9px;
+  top: 15%;
+  left: 20%;
+  animation: floatOne 7s ease-in-out infinite;
+}
+
+.particleTwo {
+  width: 6px;
+  height: 6px;
+  top: 30%;
+  right: 12%;
+  animation: floatTwo 9s ease-in-out infinite;
+}
+
+.particleThree {
+  width: 11px;
+  height: 11px;
+  bottom: 20%;
+  left: 12%;
+  animation: floatThree 8s ease-in-out infinite;
+}
+
+.particleFour {
+  width: 5px;
+  height: 5px;
+  bottom: 12%;
+  right: 22%;
+  animation: floatFour 6s ease-in-out infinite;
+}
+
+.particleFive {
+  width: 7px;
+  height: 7px;
+  top: 8%;
+  right: 35%;
+  animation: floatFive 10s ease-in-out infinite;
+}
+
+.particleSix {
+  width: 4px; height: 4px;
+  top: 45%; left: 5%;
+  animation: floatTwo 8s ease-in-out infinite;
+}
+
+.particleSeven {
+  width: 14px; height: 14px;
+  top: 55%; right: 5%;
+  animation: floatThree 11s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes glowPulse {
+  0%, 100% {
+    opacity: 0.5;
+    scale: 0.9;
+  }
+  50% {
+    opacity: 0.9;
+    scale: 1.1;
+  }
+}
+
+@keyframes floatOne {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(18px, -25px); }
+}
+
+@keyframes floatTwo {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-20px, 18px); }
+}
+
+@keyframes floatThree {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(15px, 20px); }
+}
+
+@keyframes floatFour {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-15px, -20px); }
+}
+
+@keyframes floatFive {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(12px, 25px); }
+}

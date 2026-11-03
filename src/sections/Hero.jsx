@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../Components/Button";
+import { motion } from "framer-motion";
 
 import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 
@@ -119,12 +120,31 @@ const Hero = () => {
 
         {/* Portrait and social links */}
         <div className="flex flex-col items-center justify-center gap-8">
-          {/* Portrait container - animations will be added later */}
-          <div className="relative flex w-full items-center justify-center">
-            <img
+          {/* Portrait container */}
+          <div className="heroPortrait relative flex w-full items-center justify-center">
+            {/* Blue glow behind the portrait */}
+            <div className="portraitGlow" />
+
+            {/* Floating particles */}
+            <div className="orbitParticle particleOne" />
+            <div className="orbitParticle particleTwo" />
+            <div className="orbitParticle particleThree" />
+            <div className="orbitParticle particleFour" />
+            <div className="orbitParticle particleFive" />
+            <div className="orbitParticle particleSix" />
+            <div className="orbitParticle particleSeven" />
+
+            {/* Your portrait */}
+            <motion.img
               src="/images/Nme.png"
               alt="Portrait of Amir Hussain Naweed"
-              className="w-full max-w-[538px] object-contain"
+              className="relative z-10 w-full max-w-[538px] object-contain"
+              animate={{ y: [0, -10, 0] }}
+              transition={{
+                duration: 6,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
             />
           </div>
 
