@@ -383,3 +383,199 @@ body {
   0%, 100% { transform: translate(0, 0); }
   50% { transform: translate(12px, 25px); }
 }
+
+/* About Me section */
+.aboutSection {
+  @apply bg-white text-slate-900 transition-colors duration-300;
+}
+
+.dark .aboutSection {
+  @apply bg-black text-white;
+}
+
+/* Small ABOUT ME label */
+.aboutEyebrow {
+  @apply text-blue-600 text-sm font-semibold tracking-[0.25em];
+}
+
+.dark .aboutEyebrow {
+  @apply text-blue-400;
+}
+
+.aboutEyebrowLine {
+  @apply h-[2px] w-8 bg-blue-500;
+}
+
+/* Main heading */
+.aboutHeading {
+  @apply text-slate-900;
+}
+
+.dark .aboutHeading {
+  @apply text-white;
+}
+
+.aboutHeadingAccent {
+  @apply text-blue-600;
+}
+
+.dark .aboutHeadingAccent {
+  @apply text-blue-400;
+}
+
+/* Subtitle */
+.aboutSubtitle {
+  @apply text-slate-800;
+}
+
+.dark .aboutSubtitle {
+  @apply text-slate-100;
+}
+
+/* Description */
+.aboutDescription {
+  @apply text-slate-600;
+}
+
+.dark .aboutDescription {
+  @apply text-slate-300;
+}
+
+/* About Me portrait */
+.aboutPortrait {
+  position: relative;
+  isolation: isolate;
+}
+
+.aboutPortraitGlow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  width: 115%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(59, 130, 246, 0.38) 0%,
+    rgba(37, 99, 235, 0.24) 35%,
+    rgba(37, 99, 235, 0.12) 55%,
+    transparent 75%
+  );
+  filter: blur(65px);
+  transform: translate(-50%, -50%);
+  animation: aboutGlowPulse 6s ease-in-out infinite;
+}
+
+.dark .aboutPortraitGlow {
+  background: radial-gradient(
+    circle,
+    rgba(59, 130, 246, 0.48) 0%,
+    rgba(37, 99, 235, 0.3) 35%,
+    rgba(37, 99, 235, 0.15) 55%,
+    transparent 75%
+  );
+}
+
+/* Glow animation */
+@keyframes aboutGlowPulse {
+  0%, 100% {
+    opacity: 0.65;
+    scale: 0.92;
+  }
+
+  50% {
+    opacity: 1;
+    scale: 1.08;
+  }
+}
+
+/* About Me floating particles */
+.aboutParticle {
+  position: absolute;
+  z-index: 20;
+  border-radius: 50%;
+  background: #60a5fa;
+  box-shadow:
+    0 0 8px rgba(59, 130, 246, 0.8),
+    0 0 18px rgba(59, 130, 246, 0.5);
+  pointer-events: none;
+}
+
+/* Particle sizes and positions */
+.aboutParticleOne {
+  width: 7px;
+  height: 7px;
+  top: 15%;
+  left: 20%;
+  animation: aboutParticleFloat 5s ease-in-out infinite;
+}
+
+.aboutParticleTwo {
+  width: 5px;
+  height: 5px;
+  top: 28%;
+  right: 15%;
+  animation: aboutParticleFloat 6s ease-in-out infinite 1s;
+}
+
+.aboutParticleThree {
+  width: 9px;
+  height: 9px;
+  top: 48%;
+  left: 8%;
+  animation: aboutParticleFloat 7s ease-in-out infinite 0.5s;
+}
+
+.aboutParticleFour {
+  width: 4px;
+  height: 4px;
+  top: 65%;
+  right: 12%;
+  animation: aboutParticleFloat 5.5s ease-in-out infinite 1.5s;
+}
+
+.aboutParticleFive {
+  width: 6px;
+  height: 6px;
+  bottom: 15%;
+  left: 25%;
+  animation: aboutParticleFloat 6.5s ease-in-out infinite 2s;
+}
+
+.aboutParticleSix {
+  width: 4px;
+  height: 4px;
+  bottom: 25%;
+  right: 28%;
+  animation: aboutParticleFloat 5s ease-in-out infinite 0.8s;
+}
+
+.aboutParticleSeven {
+  width: 8px;
+  height: 8px;
+  top: 12%;
+  right: 35%;
+  animation: aboutParticleFloat 7s ease-in-out infinite 1.8s;
+}
+
+.aboutParticleEight {
+  width: 5px;
+  height: 5px;
+  bottom: 10%;
+  right: 18%;
+  animation: aboutParticleFloat 6s ease-in-out infinite 2.5s;
+}
+
+/* Gentle floating and fading */
+@keyframes aboutParticleFloat {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.35;
+  }
+
+  50% {
+    transform: translate3d(8px, -16px, 0);
+    opacity: 1;
+  }
+}
