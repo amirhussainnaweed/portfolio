@@ -579,3 +579,523 @@ body {
     opacity: 1;
   }
 }
+
+/* ==============================
+   MY JOURNEY SECTION
+============================== */
+
+.journeySection {
+  @apply relative overflow-hidden bg-white text-slate-900 transition-colors duration-300;
+}
+
+.dark .journeySection {
+  @apply bg-black text-white;
+}
+
+/* Section heading */
+.journeyHeading {
+  @apply text-slate-900;
+}
+
+.dark .journeyHeading {
+  @apply text-white;
+}
+
+.journeyHeading span {
+  @apply text-blue-600;
+}
+
+.dark .journeyHeading span {
+  @apply text-blue-400;
+}
+
+.journeySubtitle {
+  @apply text-slate-600;
+}
+
+.dark .journeySubtitle {
+  @apply text-slate-300;
+}
+
+/* Timeline container */
+.journeyTimeline {
+  @apply relative mx-auto max-w-[850px] pl-10 sm:pl-14;
+}
+
+/* Glowing vertical line */
+/* Timeline track */
+.journeyTimelineTrack {
+  position: absolute;
+  top: 2px;
+  bottom: 8px;
+  left: 10px;
+  width: 2px;
+}
+
+@media (min-width: 640px) {
+  .journeyTimelineTrack {
+    left: 14px;
+  }
+}
+
+/* Background line */
+.journeyTimelineBase {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  border-radius: 10px;
+  background: #dbeafe;
+}
+
+.dark .journeyTimelineBase {
+  background: #172554;
+}
+
+/* Animated blue progress */
+.journeyTimelineFill {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    #60a5fa,
+    #2563eb,
+    #3b82f6
+  );
+  box-shadow:
+    0 0 8px rgba(59, 130, 246, 0.8),
+    0 0 18px rgba(59, 130, 246, 0.5);
+}
+
+/* Moving energy point */
+.journeyEnergyPoint {
+  position: absolute;
+  left: 50%;
+  z-index: 30;
+  width: 18px;
+  height: 18px;
+  transform: translate(-50%, -50%);
+}
+
+.journeyEnergyCore {
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  background: #93c5fd;
+  box-shadow:
+    0 0 8px 3px #3b82f6,
+    0 0 18px 6px rgba(59, 130, 246, 0.7),
+    0 0 35px 10px rgba(59, 130, 246, 0.35);
+}
+
+/* Timeline items */
+.journeyItem {
+  @apply relative mb-10 last:mb-0;
+}
+
+/* Glowing timeline dots */
+/* Timeline milestone dots */
+.journeyDot {
+  position: absolute;
+  top: 28px;
+  left: -37px;
+  z-index: 25;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #3b82f6;
+  border-radius: 50%;
+  background: white;
+  box-sizing: border-box;
+  transition:
+    background 0.4s ease,
+    box-shadow 0.4s ease,
+    border-color 0.4s ease;
+}
+
+@media (min-width: 640px) {
+  .journeyDot {
+    left: -49px;
+  }
+}
+
+.dark .journeyDot {
+  background: #020617;
+  border-color: #3b82f6;
+}
+
+/* Activated checkpoint */
+.journeyDot.active {
+  background: #93c5fd;
+  border-color: #dbeafe;
+  box-shadow:
+    0 0 6px 3px rgba(96, 165, 250, 0.75),
+    0 0 16px 7px rgba(59, 130, 246, 0.4),
+    0 0 28px 10px rgba(96, 165, 250, 0.2);
+}
+
+.dark .journeyDot.active {
+  background: #60a5fa;
+  border-color: #bfdbfe;
+}
+
+/* Milestone cards */
+.journeyCard {
+  @apply relative rounded-2xl border border-slate-200 bg-slate-50 p-6 transition-all duration-300 sm:p-8;
+}
+
+.journeyCard:hover {
+  @apply border-blue-300;
+  box-shadow: 0 8px 35px rgba(59, 130, 246, 0.1);
+}
+
+.dark .journeyCard {
+  @apply border-slate-800 bg-slate-950;
+}
+
+.dark .journeyCard:hover {
+  @apply border-blue-800;
+  box-shadow: 0 8px 35px rgba(59, 130, 246, 0.15);
+}
+
+/* Date / milestone label */
+.journeyDate {
+  @apply inline-block rounded-full bg-blue-100 px-4 py-1.5 text-xs font-bold tracking-wider text-blue-700;
+}
+
+.dark .journeyDate {
+  @apply bg-blue-950 text-blue-300;
+}
+
+/* Card title */
+.journeyCardTitle {
+  @apply mt-4 font-Poppins text-xl font-semibold text-slate-900 sm:text-2xl;
+}
+
+.dark .journeyCardTitle {
+  @apply text-white;
+}
+
+/* Card description */
+.journeyCardDescription {
+  @apply mt-3 font-Poppins text-sm leading-7 text-slate-600 sm:text-base;
+}
+
+.dark .journeyCardDescription {
+  @apply text-slate-300;
+}
+
+/* ==============================
+   MAGICAL ENERGY SPARKS
+============================== */
+
+.journeyEnergyPoint {
+  overflow: visible;
+}
+
+.journeySpark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #93c5fd;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow:
+    0 0 6px 2px rgba(59, 130, 246, 0.9),
+    0 0 12px 3px rgba(59, 130, 246, 0.5);
+  animation: journeySparkBurst 1.5s ease-out infinite;
+}
+
+/* Different particle directions and timing */
+
+.journeySpark1 {
+  --spark-x: -25px;
+  --spark-y: -24px;
+  animation-delay: 0s;
+}
+
+.journeySpark2 {
+  --spark-x: 27px;
+  --spark-y: -18px;
+  animation-delay: 0.25s;
+}
+
+.journeySpark3 {
+  --spark-x: -30px;
+  --spark-y: 5px;
+  animation-delay: 0.5s;
+}
+
+.journeySpark4 {
+  --spark-x: 28px;
+  --spark-y: 12px;
+  animation-delay: 0.75s;
+}
+
+.journeySpark5 {
+  --spark-x: -16px;
+  --spark-y: 29px;
+  animation-delay: 0.35s;
+}
+
+.journeySpark6 {
+  --spark-x: 18px;
+  --spark-y: 26px;
+  animation-delay: 0.9s;
+}
+
+.journeySpark7 {
+  --spark-x: 0px;
+  --spark-y: -32px;
+  animation-delay: 1.1s;
+}
+
+.journeySpark8 {
+  --spark-x: 0px;
+  --spark-y: 32px;
+  animation-delay: 0.6s;
+}
+
+/* Particle burst animation */
+
+@keyframes journeySparkBurst {
+  0% {
+    transform: translate(-50%, -50%) scale(0.3);
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  75% {
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: translate(
+      calc(-50% + var(--spark-x)),
+      calc(-50% + var(--spark-y))
+    ) scale(0);
+    opacity: 0;
+  }
+}
+
+
+/* =================================
+   PROFESSIONAL EXPERIENCE SECTION
+================================= */
+
+.experienceSection {
+  @apply relative;
+}
+
+/* Section heading */
+.experienceHeading {
+  @apply text-slate-900;
+}
+
+.dark .experienceHeading {
+  @apply text-white;
+}
+
+.experienceHeading span {
+  @apply text-blue-600;
+}
+
+.dark .experienceHeading span {
+  @apply text-blue-400;
+}
+
+.experienceSubtitle {
+  @apply text-slate-600;
+}
+
+.dark .experienceSubtitle {
+  @apply text-slate-300;
+}
+
+
+
+
+
+
+/* Experience cards */
+.experienceCard {
+  @apply relative w-full overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 p-6 transition-all duration-300 sm:max-w-[420px] sm:p-8;
+  box-shadow: 0 5px 25px rgba(15, 23, 42, 0.04);
+}
+
+.experienceCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    #60a5fa,
+    #2563eb,
+    transparent
+  );
+  opacity: 0.9;
+}
+
+.experienceCard:hover {
+  @apply border-blue-300;
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(59, 130, 246, 0.12);
+}
+
+.dark .experienceCard {
+  @apply border-slate-800 bg-slate-950;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.dark .experienceCard:hover {
+  @apply border-blue-800;
+  box-shadow: 0 12px 40px rgba(59, 130, 246, 0.16);
+}
+
+/* Card top row */
+.experienceCardTop {
+  @apply flex flex-wrap items-center justify-between gap-3;
+}
+
+.experienceNumber {
+  @apply text-xs font-bold tracking-[0.18em] text-blue-600;
+}
+
+.dark .experienceNumber {
+  @apply text-blue-400;
+}
+
+.experienceType {
+  @apply rounded-full bg-blue-100 px-3 py-1 text-[10px] font-semibold text-blue-700;
+}
+
+.dark .experienceType {
+  @apply bg-blue-950 text-blue-300;
+}
+
+/* Position */
+.experiencePosition {
+  @apply mt-5 font-Poppins text-xl font-bold leading-snug text-slate-900 sm:text-2xl;
+}
+
+.dark .experiencePosition {
+  @apply text-white;
+}
+
+/* Organization */
+.experienceOrganization {
+  @apply mt-2 font-Poppins text-sm font-medium text-slate-600;
+}
+
+.dark .experienceOrganization {
+  @apply text-slate-300;
+}
+
+/* Period */
+.experiencePeriod {
+  @apply mt-4 inline-block rounded-lg border border-blue-200 px-3 py-1.5 text-xs font-semibold text-blue-700;
+}
+
+.dark .experiencePeriod {
+  @apply border-blue-900 text-blue-300;
+}
+
+/* Description */
+.experienceDescription {
+  @apply mt-5 font-Poppins text-sm leading-7 text-slate-600 sm:text-base;
+}
+
+.dark .experienceDescription {
+  @apply text-slate-300;
+}
+
+/* Technology tags */
+.experienceTechnologies {
+  @apply mt-6 flex flex-wrap gap-2;
+}
+
+.experienceTechnologies span {
+  @apply rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-600;
+}
+
+.dark .experienceTechnologies span {
+  @apply border-slate-800 bg-slate-900 text-slate-300;
+}
+
+
+/* Vertical experience journey */
+.experienceTimeline {
+  @apply relative mx-auto flex max-w-[650px] flex-col items-center;
+}
+
+/* Experience cards */
+.experienceItem {
+  @apply relative flex w-full justify-center;
+}
+
+/* Consistent card width */
+.experienceCard {
+  @apply w-full max-w-[520px];
+}
+
+/* Connector between cards */
+.experienceConnector {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  flex-shrink: 0;
+}
+
+/* Dashed blue line */
+.experienceConnectorLine {
+  position: absolute;
+  top: 0;
+  bottom: 14px;
+  left: 50%;
+  width: 2px;
+  transform: translateX(-50%);
+  background: repeating-linear-gradient(
+    to bottom,
+    #60a5fa 0,
+    #60a5fa 6px,
+    transparent 6px,
+    transparent 12px
+  );
+  filter: drop-shadow(0 0 4px rgba(59, 130, 246, 0.5));
+}
+
+/* Arrowhead */
+.experienceConnectorArrow {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  width: 11px;
+  height: 11px;
+  border-right: 2px solid #3b82f6;
+  border-bottom: 2px solid #3b82f6;
+  transform: translateX(-50%) rotate(45deg);
+  filter: drop-shadow(0 0 5px rgba(59, 130, 246, 0.7));
+}
+
+.dark .experienceConnectorLine {
+  filter: drop-shadow(0 0 7px rgba(59, 130, 246, 0.8));
+}
+
+.dark .experienceConnectorArrow {
+  border-color: #60a5fa;
+}
+
