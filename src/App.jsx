@@ -47,8 +47,7 @@ function App() {
   return (
     <BrowserRouter>
       <Header theme={theme} toggleTheme={toggleTheme} />
-
-      <main className="pt-20">
+      <main>
         <Routes>
           <Route
             path="/"

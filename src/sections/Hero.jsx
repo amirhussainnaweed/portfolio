@@ -49,7 +49,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="responsive sectionDark">
+    <section className="responsive sectionDark pt-22">
       <div className="mx-auto grid min-h-[650px] max-w-[1400px] grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-8">
         {/* Introduction */}
         <div className="flex flex-col items-start gap-6">
