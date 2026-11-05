@@ -22,7 +22,7 @@ const ProjectDetails = () => {
   }
 
   return (
-    <main className="sectionDark min-h-screen bg-white px-5 py-12 text-slate-900">
+    <main className="sectionDark min-h-screen bg-white px-5 py-12 text-slate-900 pt-24">
       <div className="mx-auto max-w-6xl">
         <Link
           to="/myprojects"

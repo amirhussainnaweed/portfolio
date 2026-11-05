@@ -22,7 +22,7 @@ const MyProjects = () => {
       </h3>
 
       <div className="flex flex-wrap justify-center gap-3">
-        {["All", "Web Design", "Mentoring", "Graphic Design", "Drawing"].map(
+        {["All", "Web Development", "Mentoring", "Graphic Design", "Drawing"].map(
           (category) => (
             <ProjectButton
               key={category}
