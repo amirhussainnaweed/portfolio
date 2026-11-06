@@ -3,7 +3,7 @@ export const projects = [
    {
     id: 1,
     slug: "appointo",
-    src: "/images/projects_photos/mentor.jpg",
+    src: "/images/projects_photos/appointo.png",
     part: "Web Development",
     about: "Appointo (Appointment Booking System)",
     description:
@@ -20,7 +20,7 @@ export const projects = [
   {
     id: 2,
     slug: "crypto-based-exchange",
-    src: "/images/projects_photos/work.jpg",
+    src: "/images/projects_photos/crypto_exchange.jpg",
     part: "Web Development",
     about: "Crypto Currency Online Exchange Simulator",
     description:
@@ -37,7 +37,7 @@ export const projects = [
   {
     id: 3,
     slug: "e-commerce-shoppery",
-    src: "/images/projects_photos/design.jpg",
+    src: "/images/projects_photos/ecommerce.jpg",
     part: "Web Development",
     about: "Online e-commerce platform (Shoppery)",
     description:
@@ -53,7 +53,7 @@ export const projects = [
   },{
     id: 4,
     slug: "turkiye-scholarship-student-portal",
-    src: "/images/projects_photos/calm.jpg",
+    src: "/images/projects_photos/student_portal.jpg",
     part: "Web Development",
     about: "Turkiye Scholarship Guiding Portal",
     description:
@@ -70,7 +70,7 @@ export const projects = [
   {
     id: 5,
     slug: "etihad-high-school-website",
-    src: "/images/projects_photos/photography.jpg",
+    src: "/images/projects_photos/etihad_web.png",
     part: "Web Development",
     about: "Etihad High School Website",
     description:
