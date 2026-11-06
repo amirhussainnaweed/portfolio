@@ -83,22 +83,5 @@ export const projects = [
     overview: "I build this website and included all their information, so they would have a good online presence as the internet use is surging among people in Afghanistan. It has sections like: about, activities, our studens, our perspective, our plans and more. I also added a part where I think does the most for commercial aspect and that is a section where students can play educational and fun games according to their own level.",
     challenges: [],
     gallery: [],
-  },
-  {
-    id: 6,
-    slug: "portraits",
-    src: "/images/projects_photos/sketching.jpg",
-    part: "Drawing",
-    about: "Portrait",
-    description:
-      "A portrait drawing demonstrating attention to detail and artistic technique.",
-    status: "Completed",
-    technologies: ["Drawing", "Portrait Art"],
-    link: "#",
-    github: "#",
-    featured: false,
-    overview: "",
-    challenges: [],
-    gallery: [],
   }
 ];
