@@ -7,6 +7,7 @@ import {
 } from "framer-motion";
 
 import { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 const journeyItems = [
   {
@@ -267,6 +268,39 @@ const Journey = () => {
               </React.Fragment>
             ))}
           </div>
+          {/* Final journey CTA */}
+          <div className="experienceFinalConnector">
+            <span className="experienceFinalLine" />
+            <span className="experienceFinalArrow" />
+          </div>
+
+          <motion.div
+            className="experienceCTA"
+            initial={{ opacity: 0, y: 35 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8 }}
+          >
+            <div className="experienceCTAGlow" />
+
+            <div className="experienceCTAContent">
+              <span className="experienceCTALabel">THE NEXT CHAPTER</span>
+
+              <h3>
+                Let's Write the <span>Next Chapter</span> Together.
+              </h3>
+
+              <p>
+                Have an opportunity, project, or collaboration in mind? I'd love
+                to hear from you. Maybe our next journey starts here.
+              </p>
+
+              <Link to="/contact" className="experienceCTAButton">
+                Let's Connect
+                <span>→</span>
+              </Link>
+            </div>
+          </motion.div>
         </section>
       </div>
     </section>

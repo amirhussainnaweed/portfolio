@@ -1099,3 +1099,164 @@ body {
   border-color: #60a5fa;
 }
 
+
+/* Final experience connector */
+.experienceFinalConnector {
+  position: relative;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+}
+
+.experienceFinalLine {
+  position: absolute;
+  top: 0;
+  height: 58px;
+  width: 2px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #60a5fa 0,
+    #60a5fa 6px,
+    transparent 6px,
+    transparent 12px
+  );
+}
+
+.experienceFinalArrow {
+  position: absolute;
+  top: 52px;
+  width: 11px;
+  height: 11px;
+  border-right: 2px solid #3b82f6;
+  border-bottom: 2px solid #3b82f6;
+  transform: rotate(45deg);
+  filter: drop-shadow(0 0 5px #3b82f6);
+}
+
+/* CTA card */
+.experienceCTA {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 45px 30px;
+  text-align: center;
+  border: 1px solid #bfdbfe;
+  border-radius: 24px;
+  background: linear-gradient(
+    135deg,
+    #eff6ff,
+    #ffffff 55%,
+    #dbeafe
+  );
+  box-shadow: 0 10px 40px rgba(59, 130, 246, 0.1);
+}
+
+.dark .experienceCTA {
+  border-color: #1e40af;
+  background: linear-gradient(
+    135deg,
+    #020617,
+    #0f172a 55%,
+    #172554
+  );
+  box-shadow: 0 10px 45px rgba(37, 99, 235, 0.16);
+}
+
+/* Ambient glow */
+.experienceCTAGlow {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: rgba(59, 130, 246, 0.13);
+  filter: blur(65px);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+/* CTA content */
+.experienceCTAContent {
+  position: relative;
+  z-index: 1;
+}
+
+.experienceCTALabel {
+  @apply text-xs font-bold tracking-[0.25em] text-blue-600;
+}
+
+.dark .experienceCTALabel {
+  @apply text-blue-400;
+}
+
+.experienceCTA h3 {
+  @apply mt-5 font-Poppins text-2xl font-bold leading-tight text-slate-900 sm:text-3xl lg:text-4xl;
+}
+
+.dark .experienceCTA h3 {
+  @apply text-white;
+}
+
+.experienceCTA h3 span {
+  @apply text-blue-600;
+}
+
+.dark .experienceCTA h3 span {
+  @apply text-blue-400;
+}
+
+.experienceCTA p {
+  @apply mx-auto mt-5 max-w-[480px] font-Poppins text-sm leading-7 text-slate-600 sm:text-base;
+}
+
+.dark .experienceCTA p {
+  @apply text-slate-300;
+}
+
+/* CTA button */
+.experienceCTAButton {
+  @apply mt-8 inline-flex items-center gap-3 rounded-full bg-blue-600 px-7 py-3.5 font-Poppins text-sm font-semibold text-white transition-all duration-300;
+  box-shadow: 0 5px 20px rgba(37, 99, 235, 0.25);
+}
+
+.experienceCTAButton:hover {
+  @apply bg-blue-700;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(37, 99, 235, 0.4);
+}
+
+.experienceCTAButton span {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.experienceCTAButton:hover span {
+  transform: translateX(5px);
+}
+
+
+/* Project filter buttons */
+.filter-inactive {
+  background-color: white;
+  color: #1d4ed8;
+  border-color: #bfdbfe;
+}
+
+.dark .filter-inactive {
+  background-color: #0f172a;
+  color: #93c5fd;
+  border-color: #334155;
+}
+
+.filter-inactive:hover {
+  background-color: #eff6ff;
+}
+
+.dark .filter-inactive:hover {
+  background-color: #1e293b;
+}
+
