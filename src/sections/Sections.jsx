@@ -34,9 +34,9 @@ const Sections = ({ theme, toggleTheme }) => {
       <section id="myprojects">
         <MyProjects theme={theme} toggleTheme={toggleTheme} />
       </section>
-      <section id="testimonials">
+      {/* <section id="testimonials">
         <Testimonial theme={theme} toggleTheme={toggleTheme} />
-      </section>
+      </section> */}
       <section id="contact">
         <Contact theme={theme} toggleTheme={toggleTheme} />
         <Footer theme={theme} toggleTheme={toggleTheme} />

@@ -75,7 +75,7 @@ export const projects = [
     about: "Etihad High School Website",
     description:
       "A website for the school I attended, a gift to them for their commercial use and administrative efficeincy",
-    status: "Completed",
+    status: "On going",
     technologies: ["React", "JavaScript", "Tailwindcss"],
     link: "#",
     github: "#",

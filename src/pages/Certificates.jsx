@@ -31,7 +31,7 @@ const certificates = [
   },
   {
     id: 3,
-    src: "/images/certificates/dataCamp_understanding_cloud_computing.png",
+    src: "/images/certificates/dataCamp_understanding_cloud_computing.jpg",
     category: "Data Engineering in Python",
     title: "Understanding Cloud Computing",
     issuer: "Datacamp",
@@ -40,7 +40,7 @@ const certificates = [
   },
   {
     id: 4,
-    src: "/images/certificates/dataCamp_introduction_to_python_for_developers.png",
+    src: "/images/certificates/dataCamp_introduction_to_python_for_developers.jpg",
     category: "Data Engineering in Python",
     title: "Introduction to Python for Developers",
     issuer: "Datacamp",
@@ -49,7 +49,7 @@ const certificates = [
   },
   {
     id: 5,
-    src: "/images/certificates/dataCamp_intermediate_python_for_developers.png",
+    src: "/images/certificates/dataCamp_intermediate_python_for_developers.jpg",
     category: "Data Engineering in Python",
     title: "Intermediate Python for Developers",
     issuer: "Datacamp",
@@ -58,7 +58,7 @@ const certificates = [
   },
   {
     id: 6,
-    src: "/images/certificates/dataCamp_introduction_to_python_for_finance.png",
+    src: "/images/certificates/dataCamp_introduction_to_python_for_finance.jpg",
     category: "Data Engineering in Python",
     title: "Introduction to Python for Finance",
     issuer: "Datacamp",

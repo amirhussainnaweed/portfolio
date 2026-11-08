@@ -66,10 +66,6 @@ function App() {
             element={<Sections theme={theme} toggleTheme={toggleTheme} />}
           />
           <Route
-            path="/testimonials"
-            element={<Sections theme={theme} toggleTheme={toggleTheme} />}
-          />
-          <Route
             path="/contact"
             element={<Sections theme={theme} toggleTheme={toggleTheme} />}
           />
